@@ -1,0 +1,53 @@
+#main{
+    margin-top: 1.8%;
+    margin-left: 8%;
+    text-align: center;
+    border: 2px solid grey;
+    width: 84%;
+    height: auto;
+}
+#div1{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    border: 1px solid grey;
+    height: auto;
+}
+#div2{
+    text-align: center;
+}
+
+.p{
+    font-size: 150%;
+    text-align: left;
+    margin-left: 8%;
+}
+.i{
+    width: 20%;
+    margin-right: 6%;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+#div3{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.btn{
+    background-color: rgb(252, 81, 110);
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 17%;
+    border: 1px solid rgb(252, 81, 110);
+       
+}
+#btn1
+{
+    margin-right: 10%; 
+}
+
+#div4{
+    margin-top:8%;
+}

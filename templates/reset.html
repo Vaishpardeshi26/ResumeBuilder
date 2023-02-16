@@ -1,0 +1,78 @@
+{% if message %}
+<script>
+  alert("{{message}}");
+</script>
+{% endif %}
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../static/CSS/Login_Signup/style1.css">
+
+	</head>
+	<body class="img js-fullheight" style="background-image: url(https://i.pinimg.com/originals/71/fc/dc/71fcdcac6e20dc608b39512fb1ca6290.jpg);">
+
+
+	<section class="ftco-section">
+
+		<div class="container">
+            
+			<div class="row justify-content-center">
+
+				<div class="col-md-6 text-center mb-4">
+					<h2 class="heading-section">Reset Password</h2>
+				</div>
+
+			</div>
+			
+            <div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	<h3 class="mb-4 text-center">Go Back to Login? <a href="{% url 'login' %}">Login</a></h3>
+
+		      	<form action="" method="post">
+
+					{% csrf_token %}
+
+		      		<div class="form-group">
+		      			<input type="email" id="email" class="form-control" placeholder="Email" required name="first1">
+		      		</div>
+
+	           
+
+	                <div class="form-group">
+	            	    <button type="submit" class="form-control btn btn-primary submit px-3">Send Email</button>
+	                </div>
+
+	            
+
+	            </form>
+                
+                </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+      </section>
+
+	<script src="../static/JS/Login_Signup/jquery.min.js"></script>
+  <script src="../static/JS/Login_Signup/popper.js"></script>
+  <script src="../static/JS/Login_Signup/bootstrap.min.js"></script>
+  <script src="../static/JS/Login_Signup/main.js"></script>
+  <script src="../static/JS/Login_Signup/index.js"></script>
+
+	</body>
+</html>
+

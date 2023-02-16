@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/CSS/page1.css">
+    <script src="../static/JS/homepage.js"></script>
+</head>
+
+                    <body>
+                    
+                        <!--
+
+                            <div>
+                            {{n1}}
+                            {{n2}}
+                            {{n3}}
+                            {{n4}}
+                            {{n5}}
+                            {{n6}}
+                            {{n7}}
+                            {{n8}}
+                            {{n9}}
+                            {{n10}}
+                        </div>
+
+                    -->
+
+                    
+                        <div id="main">
+                            <div id="div1">
+                                <h1>Personal Details</h1><br>
+                            </div>
+                            <div id="div2">
+                                <form action="" method="post">
+                                     {% csrf_token %}
+                                    <div id="div3" class="div">
+                                        <input type="text" required name="first1" id="first_name" placeholder="First Name*">
+                                        <input type="text" required placeholder="Last Name*" name="first2">
+                                    </div>
+                                    <div id="div4" class="div">
+                                        <input type="email" required placeholder="Email*" name="first3">
+                                        <input type="text" id="number" placeholder="Phone Number*" pattern="[1-9]{1}[0-9]{9}" required name="first4">  
+                                    </div>
+                                    <div id="div5" class="div">
+                                        <input type="text" placeholder="Your Website" name="first5">
+                                        <input type="text" placeholder="Github" name="first6">
+                                    </div>
+                                    <div id="div6" class="div">
+                                        <input type="text" placeholder="Linked In" name="first7">
+                                        <input type="text" placeholder="Twitter" name="first8">
+                                    </div>
+                                    <div id="div3" class="div">
+                                        <input type="text" placeholder="Facebook" name="firs9">
+                                        <input type="text" placeholder="Instagram" name="first10">
+                                    </div>
+                                
+                            </div>
+                            <hr>
+                            <div id="div7">
+                                <a href="{% url 'homepage1' %}" class="btn" id="btn1">&lt;   Prev</a>
+                                <button type="submit" class="btn">Next   &gt;</button>            
+                            </div>
+                            <p>Page 1/5</p>
+                        </form>
+                        </div>
+                    
+                    
+                    
+                    
+                   
+
+</body>
+</html>
+
